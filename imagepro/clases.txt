@@ -1,0 +1,73 @@
+Image
+- int width
+- int height
+- int th_value
+- uchar* data
+- ListOfRegion regions
++ Image()
++ Image(int, int)
++ Image(int, int, uchar*)
++ threshold()
++ getValue(int, int): int
++ show()
++ getRegions(): ListOfRegion //HACER FUNCION
++ readImage(string &): static Image*
++ ~Image()
+
+ListOfRegion
+- headRegion: NodeRegion* 	
++ ListOfRegion()
++ insertFirst(Region)
++ ~ListOfRegion()
+
+NodeRegion
+- region: Region;
+- nextRegion: NodeRegion*
++ NodeRegion()
++ NodeRegion(Region)
++ setRegion(Region)
++ setNext(NodeRegion*)
++ getRegion(): Region
++ getNext(): NodeRegion*
++ ~NodeRegion()
+
+Region
+- id: int
+- size: int
+- points: ListOfPoint2D	
++ Region()
++ setId(int)
++ setSize(int)
++ getId(): int
++ getSize(): int
++ getPoints(): ListOfPoint2D 
++ showRegion() //HACER FUNCION
++ ~Region()
+
+ListOfPoint2D
+- headPoint2D: NodePoint2D* 	
++ ListOfPoint2D()
++ insertFirst(Point2D)
++ ~ListOfPoint2D()
+
+NodePoint2D
+- point2D: Point2D;
+- nextPoint2D: NodePoint2D*
++ NodePoint2D()
++ NodePoint2D(Point2D)
++ setPoint2D(Point2D)
++ setNext(NodePoint2D*)
++ getPoint2D(): Point2D
++ getNext(): NodePoint2D*
++ ~NodePoint2D()
+
+Point2D
+- x: int
+- y: int		
++ Point2D()
++ Point2D(int, int);
++ setX(int);
++ setY(int);
++ getX(): int
++ getY(): int
++ ~Point2D()
