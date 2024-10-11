@@ -5,7 +5,7 @@
 #ifndef NODEPOINT2D_HPP_
 #define NODEPOINT2D_HPP_
 
-#include "include/image/point2D.hpp"
+#include "image/point2D.hpp"
 
 namespace image {
 	class NodePoint2D{

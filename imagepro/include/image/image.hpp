@@ -7,7 +7,7 @@
 #ifndef IMAGE_HPP_
 #define IMAGE_HPP_
 
-#include "include/image/listofregion.hpp"
+#include "image/listofregion.hpp"
 
 namespace image {
 	class Image; 
@@ -27,7 +27,7 @@ namespace image {
 		void threshold(); 
     	int getValue(int row, int col);
 		void show();
-		ListOfRegion getRegions();
+		//ListOfRegion getRegions();
 		static Image* readImage(std::string &path);   
 		virtual ~Image();      
 	};

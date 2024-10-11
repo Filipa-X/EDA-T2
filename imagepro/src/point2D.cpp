@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-#include "include/image/point2D.hpp"
+#include "image/point2D.hpp"
 
  namespace image {
 

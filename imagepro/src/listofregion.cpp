@@ -3,7 +3,7 @@
 
 #include<iostream>
 
-#include "include/image/listofregion.hpp"
+#include "image/listofregion.hpp"
 
 namespace image {
 
@@ -20,5 +20,10 @@ namespace image {
             headRegion = nodeRegion;
         }
     }
+
+    ListOfRegion :: ~ListOfRegion() {
+
+    }
+
 
 }

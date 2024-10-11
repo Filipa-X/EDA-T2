@@ -5,7 +5,7 @@
 #ifndef LISTOFREGION_HPP_
 #define LISTOFREGION_HPP_
 
-#include "include/image/noderegion.hpp"
+#include "image/noderegion.hpp"
 
 namespace image {
 	class ListOfRegion{

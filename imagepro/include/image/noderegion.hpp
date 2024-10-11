@@ -5,7 +5,7 @@
 #ifndef NODEREGION_HPP_
 #define NODEREGION_HPP_
 
-#include "include/image/region.hpp"
+#include "image/region.hpp"
 
 namespace image {
 	class NodeRegion{

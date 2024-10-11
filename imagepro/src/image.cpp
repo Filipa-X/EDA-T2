@@ -55,9 +55,9 @@ namespace image{
         }
     }
 
-    ListOfRegion Image :: getRegions() {
+    //ListOfRegion Image :: getRegions() {
         //implementar funcion
-    }
+    //}
 
     Image* Image::readImage(std::string &path){
 
@@ -65,7 +65,19 @@ namespace image{
         std::ifstream fin(path, std::ios::binary);
         char info[54];
         // read the 54-byte header
+
+        if (!fin.is_open()) {
+            std :: cerr << "Error: No se puede abrir el archivo " << path << std :: endl;
+            return nullptr;
+        }
+        
         fin.read(info, 54);
+
+        if (info[0] != 'B') {
+            std :: cerr << "Error: El archivo no es un BMP válido" << std :: endl;
+            return nullptr;
+        }
+
         // extract image height and width from header
         int width = *(int*)&info[18];
         int height = *(int*)&info[22];
@@ -73,6 +85,12 @@ namespace image{
         short int bits = *(short int*)&info[28];
         int imagesize = *(int*)&info[34];
         int numcolors = *(int*)&info[46];
+
+        if (bits != 8) {
+            std :: cerr << "Error: Solo se admiten imagenes BMP de 8 bits" << std :: endl;
+            return nullptr;
+        }
+
         assert(info[0]=='B' && info[1] =='M');
         assert(bits == 8);
         // std::cout<< "planes " << planes << std::endl;
@@ -101,7 +119,7 @@ namespace image{
         return im;
     }
 
-    Image::~Image(){
+    Image :: ~Image() {
 
     }
 

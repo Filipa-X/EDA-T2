@@ -5,7 +5,7 @@
 #ifndef LISTOFPOINT2D_HPP_
 #define LISTOFPOINT2D_HPP_
 
-#include "include/image/nodepoint2d.hpp"
+#include "image/nodepoint2d.hpp"
 
 namespace image {
 	class ListOfPoint2D{

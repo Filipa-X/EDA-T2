@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-#include "include/image/region.hpp"
+#include "image/region.hpp"
 
  namespace image {
 
@@ -27,9 +27,13 @@
         return size;
     }
 
-    ListOfPoint2D Region :: getPoints() {
+    //ListOfPoint2D Region :: getPoints() {
         //implementar funcion
-    }
+    //}
+
+    //void Region :: showRegions() {
+        //implementar funcion
+    //}
 
     Region :: ~Region() {
         

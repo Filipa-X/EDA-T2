@@ -40,7 +40,7 @@ Region
 + setSize(int)
 + getId(): int
 + getSize(): int
-+ getPoints(): ListOfPoint2D 
++ getPoints(): ListOfPoint2D //HACER FUNCION
 + showRegion() //HACER FUNCION
 + ~Region()
 

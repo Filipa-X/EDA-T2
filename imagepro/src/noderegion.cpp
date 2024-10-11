@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-#include "include/image/noderegion.hpp"
+#include "image/noderegion.hpp"
 
 namespace image {
 

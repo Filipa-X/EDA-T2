@@ -3,7 +3,7 @@
 
 #include<iostream>
 
-#include "include/image/listofpoint2d.hpp"
+#include "image/listofpoint2d.hpp"
 
 namespace image {
 
@@ -19,6 +19,10 @@ namespace image {
             nodePoint2D -> setNext(headPoint2D);
             headPoint2D = nodePoint2D;
         }
+    }
+
+    ListOfPoint2D :: ~ListOfPoint2D() {
+
     }
 
 }
