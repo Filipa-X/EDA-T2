@@ -2,6 +2,8 @@
  Class ListOfPoint2D
 */
 
+#include <vector>
+
 #ifndef LISTOFPOINT2D_HPP_
 #define LISTOFPOINT2D_HPP_
 
@@ -15,6 +17,9 @@ namespace image {
 		ListOfPoint2D();
 
 		void insertFirst(Point2D point2D);
+		void insertLast(Point2D point2D);
+		bool isPoint2D(int i, int j, std :: vector<Point2D> points);
+		void print();
 
 		virtual ~ListOfPoint2D();		
 	};

@@ -3,13 +3,13 @@ Image
 - int height
 - int th_value
 - uchar* data
-- ListOfRegion regions
 + Image()
 + Image(int, int)
 + Image(int, int, uchar*)
 + threshold()
 + getValue(int, int): int
 + show()
++ wasVisited(int, std :: vector<int>): bool
 + getRegions(): ListOfRegion //HACER FUNCION
 + readImage(string &): static Image*
 + ~Image()
@@ -18,6 +18,7 @@ ListOfRegion
 - headRegion: NodeRegion* 	
 + ListOfRegion()
 + insertFirst(Region)
++ insertLast(Region)
 + ~ListOfRegion()
 
 NodeRegion
@@ -38,9 +39,9 @@ Region
 + Region()
 + setId(int)
 + setSize(int)
++ setPoints(ListOfPoint2D)
 + getId(): int
 + getSize(): int
-+ getPoints(): ListOfPoint2D //HACER FUNCION
 + showRegion() //HACER FUNCION
 + ~Region()
 
@@ -48,6 +49,7 @@ ListOfPoint2D
 - headPoint2D: NodePoint2D* 	
 + ListOfPoint2D()
 + insertFirst(Point2D)
++ insertLast(Point2D)
 + ~ListOfPoint2D()
 
 NodePoint2D

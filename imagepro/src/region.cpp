@@ -19,6 +19,10 @@
         size = _size;
     }
 
+	void Region :: setPoints(ListOfPoint2D _points) {
+        points = _points;
+    }
+
     int Region :: getId() {
         return id;
     }
@@ -27,13 +31,9 @@
         return size;
     }
 
-    //ListOfPoint2D Region :: getPoints() {
-        //implementar funcion
-    //}
-
-    //void Region :: showRegions() {
-        //implementar funcion
-    //}
+    void Region :: showRegion() {
+        points.print();
+    }
 
     Region :: ~Region() {
         

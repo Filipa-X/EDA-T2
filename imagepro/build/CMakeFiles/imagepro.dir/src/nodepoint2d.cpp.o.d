@@ -1,5 +1,5 @@
 CMakeFiles/imagepro.dir/src/nodepoint2d.cpp.o: \
- /home/edauandes/Desktop/imagepro/src/nodepoint2d.cpp \
+ /home/edauandes/Desktop/EDA-T2/imagepro/src/nodepoint2d.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -144,5 +144,5 @@ CMakeFiles/imagepro.dir/src/nodepoint2d.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/edauandes/Desktop/imagepro/include/image/nodepoint2d.hpp \
- /home/edauandes/Desktop/imagepro/include/image/point2D.hpp
+ /home/edauandes/Desktop/EDA-T2/imagepro/include/image/nodepoint2d.hpp \
+ /home/edauandes/Desktop/EDA-T2/imagepro/include/image/point2D.hpp

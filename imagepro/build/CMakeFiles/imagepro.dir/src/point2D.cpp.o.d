@@ -1,5 +1,5 @@
 CMakeFiles/imagepro.dir/src/point2D.cpp.o: \
- /home/edauandes/Desktop/imagepro/src/point2D.cpp \
+ /home/edauandes/Desktop/EDA-T2/imagepro/src/point2D.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -144,4 +144,4 @@ CMakeFiles/imagepro.dir/src/point2D.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/edauandes/Desktop/imagepro/include/image/point2D.hpp
+ /home/edauandes/Desktop/EDA-T2/imagepro/include/image/point2D.hpp

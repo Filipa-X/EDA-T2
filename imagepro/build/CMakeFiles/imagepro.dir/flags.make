@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/edauandes/Desktop/imagepro/include
+CXX_INCLUDES = -I/home/edauandes/Desktop/EDA-T2/imagepro/include
 
 CXX_FLAGS = -std=gnu++11
 

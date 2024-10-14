@@ -3,6 +3,7 @@
  */
 
 #include <string>
+#include <vector>
 
 #ifndef IMAGE_HPP_
 #define IMAGE_HPP_
@@ -19,7 +20,6 @@ namespace image {
 		int height;
 		int th_value;
 		uchar* data;
-		ListOfRegion regions;
 	public:
 		Image();
 		Image(int w, int h);
@@ -27,7 +27,10 @@ namespace image {
 		void threshold(); 
     	int getValue(int row, int col);
 		void show();
-		//ListOfRegion getRegions();
+		bool wasVisited(int position, std :: vector<int> visited);
+		ListOfRegion getRegions();
+		int getWidth();
+		int getHeight();
 		static Image* readImage(std::string &path);   
 		virtual ~Image();      
 	};

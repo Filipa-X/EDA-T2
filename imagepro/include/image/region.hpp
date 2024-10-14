@@ -17,10 +17,10 @@ namespace image {
 		Region();
 		void setId(int _id);
 		void setSize(int _size);
+		void setPoints(ListOfPoint2D _points);
 		int getId();
 		int getSize();
-		//ListOfPoint2D getPoints();
-		//void showRegion();
+		void showRegion();
         virtual ~Region(); 		
 	};
 }

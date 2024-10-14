@@ -1,7 +1,7 @@
 CMakeFiles/imagepro.dir/src/image.cpp.o: \
- /home/edauandes/Desktop/imagepro/src/image.cpp \
+ /home/edauandes/Desktop/EDA-T2/imagepro/src/image.cpp \
  /usr/include/stdc-predef.h \
- /home/edauandes/Desktop/imagepro/include/image/image.hpp \
+ /home/edauandes/Desktop/EDA-T2/imagepro/include/image/image.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -127,13 +127,17 @@ CMakeFiles/imagepro.dir/src/image.cpp.o: \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
- /usr/include/c++/11/bits/basic_string.tcc \
- /home/edauandes/Desktop/imagepro/include/image/listofregion.hpp \
- /home/edauandes/Desktop/imagepro/include/image/noderegion.hpp \
- /home/edauandes/Desktop/imagepro/include/image/region.hpp \
- /home/edauandes/Desktop/imagepro/include/image/listofpoint2d.hpp \
- /home/edauandes/Desktop/imagepro/include/image/nodepoint2d.hpp \
- /home/edauandes/Desktop/imagepro/include/image/point2D.hpp \
+ /usr/include/c++/11/bits/basic_string.tcc /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/edauandes/Desktop/EDA-T2/imagepro/include/image/listofregion.hpp \
+ /home/edauandes/Desktop/EDA-T2/imagepro/include/image/noderegion.hpp \
+ /home/edauandes/Desktop/EDA-T2/imagepro/include/image/region.hpp \
+ /home/edauandes/Desktop/EDA-T2/imagepro/include/image/listofpoint2d.hpp \
+ /home/edauandes/Desktop/EDA-T2/imagepro/include/image/nodepoint2d.hpp \
+ /home/edauandes/Desktop/EDA-T2/imagepro/include/image/point2D.hpp \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -160,4 +164,8 @@ CMakeFiles/imagepro.dir/src/image.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/iostream \
  /usr/include/c++/11/cassert /usr/include/assert.h \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/queue /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/bits/stl_heap.h /usr/include/c++/11/bits/stl_queue.h \
+ /usr/include/c++/11/bits/uses_allocator.h

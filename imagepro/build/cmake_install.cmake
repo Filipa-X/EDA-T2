@@ -1,4 +1,4 @@
-# Install script for directory: /home/edauandes/Desktop/imagepro
+# Install script for directory: /home/edauandes/Desktop/EDA-T2/imagepro
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/edauandes/Desktop/imagepro/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/edauandes/Desktop/EDA-T2/imagepro/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
