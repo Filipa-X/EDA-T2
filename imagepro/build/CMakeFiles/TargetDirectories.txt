@@ -1,3 +1,0 @@
-/home/edauandes/Desktop/EDA-T2/imagepro/build/CMakeFiles/imagepro.dir
-/home/edauandes/Desktop/EDA-T2/imagepro/build/CMakeFiles/edit_cache.dir
-/home/edauandes/Desktop/EDA-T2/imagepro/build/CMakeFiles/rebuild_cache.dir
