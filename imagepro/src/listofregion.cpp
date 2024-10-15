@@ -34,6 +34,17 @@ namespace image {
         }
     }
 
+    Region ListOfRegion :: find(int id) {
+        NodeRegion *ptr = headRegion;
+        Region region = ptr -> getRegion();
+        while(ptr -> getRegion().getId() != id) {
+            ptr = ptr -> getNext();
+        }
+        return ptr -> getRegion();
+
+
+    }
+
     ListOfRegion :: ~ListOfRegion() {
 
     }

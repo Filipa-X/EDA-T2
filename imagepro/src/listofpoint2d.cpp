@@ -44,7 +44,7 @@ namespace image {
         return false;
     }
 
-    void ListOfPoint2D :: print() {
+    void ListOfPoint2D :: print(int width, int height) {
         NodePoint2D* ptr = headPoint2D;
         std :: vector<Point2D> points;
 
@@ -54,12 +54,12 @@ namespace image {
             ptr = ptr -> getNext();
         }
 
-        for(int i = 0; i < 100; i++) {
-            for(int j = 0; j < 100; j++) {
+        for(int i = 0; i < height; i++) {
+            for(int j = 0; j < width; j++) {
                 if(isPoint2D(i, j, points)) {
-                    std :: cout << "*";
+                    std :: cout << "1";
                 } else {
-                    std :: cout << " ";
+                    std :: cout << "0";
                 }
             }
             std :: cout << std :: endl;

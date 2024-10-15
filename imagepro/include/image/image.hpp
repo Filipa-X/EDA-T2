@@ -20,10 +20,13 @@ namespace image {
 		int height;
 		int th_value;
 		uchar* data;
+		std :: string id;
 	public:
 		Image();
 		Image(int w, int h);
 		Image(int w, int h, uchar* _data);
+		void setId(std :: string _id);
+		std :: string getId();
 		void threshold(); 
     	int getValue(int row, int col);
 		void show();

@@ -31,8 +31,10 @@
         return size;
     }
 
-    void Region :: showRegion() {
-        points.print();
+    void Region :: showRegion(int width, int height) {
+        std :: cout << "Región: " << id << std :: endl;
+        std :: cout << "Tamaño: " << size << std :: endl;
+        points.print(width, height);
     }
 
     Region :: ~Region() {

@@ -16,6 +16,7 @@ namespace image {
 
 		void insertFirst(Region region);
 		void insertLast(Region region);
+		Region find(int id);
 
 		virtual ~ListOfRegion();		
 	};

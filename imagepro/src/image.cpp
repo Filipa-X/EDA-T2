@@ -9,16 +9,24 @@
 
 namespace image{
 
-    Image::Image(): width(0), height(0), th_value(120), data(nullptr) {
+    Image::Image(): width(0), height(0), th_value(120), id(""), data(nullptr) {
 
     }
 
-    Image::Image(int w, int h): width(w), height(h), th_value(120),  data(nullptr) {
+    Image::Image(int w, int h): width(w), height(h), th_value(120), id(""), data(nullptr) {
 
     }
 
-    Image::Image(int w, int h, uchar* _data): width(w), height(h), th_value(120), data(_data) {
+    Image::Image(int w, int h, uchar* _data): width(w), height(h), th_value(120), id(""), data(_data) {
        threshold();
+    }
+
+	void Image :: setId(std :: string _id) {
+        id = _id;
+    }
+
+	std :: string Image :: getId() {
+        return id;
     }
 
     void Image::threshold(){
@@ -50,7 +58,7 @@ namespace image{
                     std::cout<<" ";
                 }
                 else{
-                    std::cout<<"*";
+                    std::cout<<"1";
                 }
             }
             std::cout<<std::endl;
@@ -183,13 +191,14 @@ namespace image{
                     region.setId(id);
                     region.setSize(size); 
                     region.setPoints(points);
-                    region.showRegion(); 
+                    region.showRegion(width, height); 
                     regions.insertLast(region);
                     id++; //se aumenta el id para la proxima region
                 }
             }
         }
         std :: cout << "La imagen tiene " << id - 1 << " regiones." << std :: endl;
+
         return regions;
     }
 

@@ -20,7 +20,7 @@ namespace image {
 		void setPoints(ListOfPoint2D _points);
 		int getId();
 		int getSize();
-		void showRegion();
+		void showRegion(int width, int height);
         virtual ~Region(); 		
 	};
 }

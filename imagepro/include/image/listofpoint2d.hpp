@@ -19,7 +19,7 @@ namespace image {
 		void insertFirst(Point2D point2D);
 		void insertLast(Point2D point2D);
 		bool isPoint2D(int i, int j, std :: vector<Point2D> points);
-		void print();
+		void print(int width, int height);
 
 		virtual ~ListOfPoint2D();		
 	};
