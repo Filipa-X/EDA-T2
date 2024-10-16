@@ -191,7 +191,6 @@ namespace image{
                     region.setId(id);
                     region.setSize(size); 
                     region.setPoints(points);
-                    region.showRegion(width, height); 
                     regions.insertLast(region);
                     id++; //se aumenta el id para la proxima region
                 }
