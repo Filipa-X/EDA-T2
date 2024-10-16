@@ -196,7 +196,12 @@ namespace image{
                 }
             }
         }
-        std :: cout << "La imagen tiene " << id - 1 << " regiones." << std :: endl;
+        std :: cout << "La imagen " << getId() << " tiene " << id - 1 << " regiones." << std :: endl;
+        for(int r = 1; r < id; r++) {
+            Region region_ = regions.find(r);
+            int size_ = region_.getSize();
+            std :: cout << "Region " << r << " -> size " << size_ << std :: endl;
+        }
 
         return regions;
     }
@@ -258,7 +263,7 @@ namespace image{
             fin.close();
             char* ordered_data = new char[imagesize];
             //copy data in in a proper order            
-            std::cout<< "----------------" <<std::endl;
+            //std::cout<< "----------------" <<std::endl;
             for(int i = 0; i < height ; i++){
                 std::memcpy(ordered_data + width*i, data + width*(height - 1 - i ), width);
             }                    

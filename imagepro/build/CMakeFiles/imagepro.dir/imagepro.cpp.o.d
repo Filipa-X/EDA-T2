@@ -167,4 +167,5 @@ CMakeFiles/imagepro.dir/imagepro.cpp.o: \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc

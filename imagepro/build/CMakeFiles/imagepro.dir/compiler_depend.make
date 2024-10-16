@@ -201,7 +201,9 @@ CMakeFiles/imagepro.dir/imagepro.cpp.o: ../imagepro.cpp \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc
 
 CMakeFiles/imagepro.dir/src/image.cpp.o: ../src/image.cpp \
   /usr/include/stdc-predef.h \
@@ -1542,6 +1544,8 @@ CMakeFiles/imagepro.dir/src/region.cpp.o: ../src/region.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
+/usr/include/c++/11/sstream:
+
 /usr/include/c++/11/bits/erase_if.h:
 
 /usr/include/c++/11/bits/uses_allocator.h:
@@ -1939,6 +1943,8 @@ CMakeFiles/imagepro.dir/src/region.cpp.o: ../src/region.cpp \
 /usr/include/c++/11/cstdlib:
 
 /usr/include/strings.h:
+
+/usr/include/c++/11/bits/sstream.tcc:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 

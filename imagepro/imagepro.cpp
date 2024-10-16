@@ -5,79 +5,73 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <sstream>
 
 int main(int nargs, char** vargs){
-    /*
-    std::string filename("../images/image_5.bmp");
-    std::cout << filename << std::endl;
-    image::Image* im = nullptr;
-    im = image::Image::readImage(filename);
-    im->show();
-    */
-
 
     std :: cout << "Bienvenido a ImagePro" << std :: endl;
-    //vector para guardar imagenes
     std :: vector<image :: Image*> images;
     std :: map<std :: string, image :: ListOfRegion> regions;
-    
 
-    //read
-    std :: string id_new;
-    
-    id_new = "1";
-    std :: string filename("../images/image_3.bmp");
+    while(true) {
+        std :: string input;
+        std :: cout << ":) ";
+        getline(std :: cin, input);
 
-    image :: Image* image = nullptr;
-    image = image :: Image :: readImage(filename);
-    image -> setId(id_new);
-    images.push_back(image);
-
-    //show
-    std :: string id_show;
-
-    id_show = "1";
-
-    for(int i = 0; i < images.size(); i++) {
-        if(images[i] -> getId() == id_show) {
-            images[i] -> show();
+        if (input == "exit") {
+            break;
         }
-    }
 
-    //getRegions
-    std :: string id_getRegions;
+        if(input.find("read") != input.npos) {
+            std :: string init_path = "../images/";
+            std :: string id_new = input.substr(0, input.find("=") - 1); //algo mas
+            std :: string path = init_path + input.substr(input.find("read") + 5); //algo mas
 
-    id_getRegions = "1";
+            image :: Image* image = nullptr;
+            image = image :: Image :: readImage(path);
+            image -> setId(id_new);
+            images.push_back(image);
 
-    for(int i = 0; i < images.size(); i++) {
-        if(images[i] -> getId() == id_getRegions) {
-            image :: ListOfRegion listOfRegion = images[i] -> getRegions();
-            regions[id_getRegions] = listOfRegion;
-        }
-    }
+        } else if(input.find("getRegions") != input.npos) {
+            std :: string id_getRegions = input.substr(11);
+            for(int i = 0; i < images.size(); i++) {
+                if(images[i] -> getId() == id_getRegions) {
+                    image :: ListOfRegion listOfRegion = images[i] -> getRegions();
+                    regions[id_getRegions] = listOfRegion;
+                }
+            }
 
-    //showRegion
-    std :: string id_showRegion;
-    int id_region;
+        } else if(input.find("showRegion") != input.npos) {
+            size_t start = input.find(" ") + 1;
+            size_t end = input.find_last_of(" ");
+            std :: string id_showRegion = input.substr(start, end - start);
 
-    id_showRegion = "1";
-    id_region = 2;
+            int id_region;
+            std :: istringstream iss(input.substr(end + 1));
+            iss >> id_region;
 
-    if(regions.find(id_showRegion) != regions.end()) {
-        image :: ListOfRegion listOfRegion = regions[id_showRegion];
+            if(regions.find(id_showRegion) != regions.end()) {
+                image :: ListOfRegion listOfRegion = regions[id_showRegion];
     
-        for(int i = 0; i < images.size(); i++) {
-            if(images[i] -> getId() == id_showRegion) {
-                int width = images[i] -> getWidth();
-                int height = images[i] -> getHeight();
+                for(int i = 0; i < images.size(); i++) {
+                    if(images[i] -> getId() == id_showRegion) {
+                        int width = images[i] -> getWidth();
+                        int height = images[i] -> getHeight();
 
-                image :: Region region = listOfRegion.find(id_region);
-                region.showRegion(width, height);
+                        image :: Region region = listOfRegion.find(id_region);
+                        region.showRegion(width, height);
+                    }
+                }
+            }
+
+        } else if (input.find("show") != input.npos) {
+            std :: string id_show = input.substr(5);
+            for(int i = 0; i < images.size(); i++) {
+                if(images[i] -> getId() == id_show) {
+                    images[i] -> show();
+                }
             }
         }
-    }
-    
-
-
+    }  
     return 0;
 }
